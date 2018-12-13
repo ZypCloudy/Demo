@@ -6,6 +6,7 @@
 
     request.setCharacterEncoding( "utf-8" );
 	response.setHeader("Content-Type" , "text/html");
+	response.addHeader("Access-Control-Allow-Origin" , "*");
 	
 	String rootPath = application.getRealPath( "/" );
 	
